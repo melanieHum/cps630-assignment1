@@ -15,13 +15,6 @@ p {
 	margin-right: 20px;
 }
 
-/*
-dt {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-*/
-
 /*hyper-links will appear purple*/
 a:link {
 	color: #9966ff;
@@ -97,5 +90,5 @@ a:active {
 .info-list ul{
 	list-style: square;
 	margin: 0;
-    padding-left: 0;
+	padding-left: 0;
 }
