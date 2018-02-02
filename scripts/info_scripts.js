@@ -1,13 +1,16 @@
 $(document).ready(function() {
-
+	
+	//information windows are hidden once page loads
 	$(".img-div").hide();
 	$(".info-div").hide();
 	
+	//hides visible information windows
 	$("#reset-div").click(function() {		
 		$(".img-div").hide();
 		$(".info-div").hide();
 	});
 
+	//makes information windows visible with the appropriate content
 	$("#picasso").click(function() {		
 		$(".img-div").show();
 		$(".info-div").show();
