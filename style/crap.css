@@ -1,0 +1,101 @@
+body {
+	margin: 0px;
+	background: white;
+	color: black;
+	font-family: "Consolas";
+	font-size: 11px;
+}
+
+h1{
+	text-align: center;
+}
+
+p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/*
+dt {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+*/
+
+/*hyper-links will appear purple*/
+a:link {
+	color: #9966ff;
+	text-decoration: none;
+}
+
+/*visited hyper-links will appear grey*/
+a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+
+/*hyper-links will appear blue and underlined when moused over*/
+a:hover {
+	color: #00ccff;
+	text-decoration: underline;
+}
+
+/*upon clicking a hyper-link it will look the same as one that has been moused over LOL*/
+a:active {
+	color: #00ccff;
+	text-decoration: underline;
+}
+
+/*the black banner at the top*/
+.page-header {
+	background-color: black;
+	color: white;
+}
+
+/*spans of class 'clickable' will be blue when moused over*/
+.clickable span:hover {
+	color: #00ccff;
+	text-decoration: none;
+}
+
+/*div where the image will appear*/
+.img-div {
+	display: inline-block;
+	vertical-align: top;
+	text-align:center;
+	margin: 20px;
+	width: 400px;
+	height: 400px;
+	background-color: #dddddd;
+	padding: 5px;
+}
+
+/*div where the info will appear*/
+.info-div {
+	display: inline-block;
+	vertical-align:top;
+	margin: 20px;
+	width: 400px;
+	height: 400px;
+	background-color: #dddddd;
+	padding: 5px;
+}
+
+/*info-div will contain a table of this class*/
+.info-table table {
+	width: 350px;
+}
+
+/*info-div will contain table data of this class*/
+.info-table td {
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*for unordered lists that appear in the info-table*/
+.info-list ul{
+	list-style: square;
+	margin: 0;
+    padding-left: 0;
+}

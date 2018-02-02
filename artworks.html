@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Art Gallery - Artworks</title>
+	<link rel="stylesheet" href="style/crap.css">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div class="page-header">
+		<a href="home.html">Home</a> | 
+		<a href="artworks.html">Artworks</a> | 
+		<a href="artists.html">Artists</a>
+		
+		<h1><span id="reset-div">A&nbsp;R&nbsp;T&nbsp;W&nbsp;O&nbsp;R&nbsp;K&nbsp;S</span></h1><br>
+	</div>
+
+	<p>Click any of the following artworks to view the PHACTS (images may load slow):</p>
+
+	<ul style="list-style-type:none" class="clickable">
+		<li>
+			<span id="american-gothic">American Gothic</span>
+		</li>
+		<li>
+			<span id="guernica">Guernica</span>
+		</li>
+		<li>
+			<span id="the-persistence-of-memory">The Persistence of Memory</span>
+		</li>
+		<li>
+			<span id="the-scream">The Scream</span>
+		</li>
+		<li>
+			<span id="starry-night">Starry Night</span>
+		</li>
+	</ul>
+	
+	<!--Windows where the image and information will be displayed-->
+	<div class="img-div"></div>
+	<div class="info-div"></div>
+	
+	<!--jQuery libraries and what not-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+	<!--jQuery-->
+	<script>
+		$(document).ready(function() {
+			$(".img-div").hide();
+			$(".info-div").hide();
+		
+			$("#reset-div").click(function() {		
+				$(".img-div").hide();
+				$(".info-div").hide();
+			});
+		
+			$("#american-gothic").click(function() {		
+				$(".img-div").show();
+				$(".info-div").show();
+				$(".img-div").html("<img src= https://upload.wikimedia.org/wikipedia/commons/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg height=100%>");
+				$(".info-div").html("<body><div class=page-header><br><h1>A&nbsp;M&nbsp;E&nbsp;R&nbsp;I&nbsp;C&nbsp;A&nbsp;N &nbsp; G&nbsp;O&nbsp;T&nbsp;H&nbsp;I&nbsp;C</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Artist</b></td><td>Grant Wood</td></tr><tr><td><b>Year</b></td><td>1930</td></tr><tr><td><b>Type</b></td><td>Oil on beaverboard</td></tr><tr><td><b>Dimensions</b></td><td>78 cm × 65.3 cm<br>(30¾ in × 25¾ in)</td></tr><tr><td><b>Genres</b></td><td>Modernism</td></tr><tr><td><b>Location</b></td><td>Art Institute of Chicago</td></tr></table></div></center></body>");
+			});
+			
+			$("#guernica").click(function() {		
+				$(".img-div").show();
+				$(".info-div").show();
+				$(".img-div").html("<img src= https://artsintherightplace.files.wordpress.com/2011/01/guernica.jpg width=100%>");
+				$(".info-div").html("<body><div class=page-header><br><h1>G&nbsp;U&nbsp;E&nbsp;R&nbsp;N&nbsp;I&nbsp;C&nbsp;A</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Artist</b></td><td>Pablo Picasso</td></tr><tr><td><b>Year</b></td><td>1937</td></tr><tr><td><b>Type</b></td><td>Oil on canvas</td></tr><tr><td><b>Dimensions</b></td><td>349.3 cm × 776.6 cm<br>(137.4 in × 305.5 in)</td></tr><tr><td><b>Genres</b></td><td>Cubism, Surrealism</td></tr><tr><td><b>Location</b></td><td>Museo Reina Sofia,<br>Madrid, Spain</td></tr></table></div></center></body>");
+			});
+			
+			$("#the-persistence-of-memory").click(function() {		
+				$(".img-div").show();
+				$(".info-div").show();
+				$(".img-div").html("<img src= https://uploads5.wikiart.org/images/salvador-dali/the-persistence-of-memory-1931.jpg width=100%>");
+				$(".info-div").html("<body><div class=page-header><br><h1>T&nbsp;H&nbsp;E &nbsp; P&nbsp;E&nbsp;R&nbsp;S&nbsp;I&nbsp;S&nbsp;T&nbsp;E&nbsp;N&nbsp;C&nbsp;E<br>O&nbsp;F &nbsp; M&nbsp;E&nbsp;M&nbsp;O&nbsp;R&nbsp;Y</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Artist</b></td><td>Salvador Dalí</td></tr><tr><td><b>Year</b></td><td>1931</td></tr><tr><td><b>Type</b></td><td>Oil on canvas</td></tr><tr><td><b>Dimensions</b></td><td>24 cm × 33 cm<br>(9.5 in × 13 in)</td></tr><tr><td><b>Genres</b></td><td>Surrealism</td></tr><tr><td><b>Location</b></td><td>Museum of Modern Art,<br>New York City</td></tr></table></div></center></body>");
+			});
+			
+			$("#the-scream").click(function() {		
+				$(".img-div").show();
+				$(".info-div").show();
+				$(".img-div").html("<img src= https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Scream.jpg/1200px-The_Scream.jpg height=100%>");
+				$(".info-div").html("<body><div class=page-header><br><h1>T&nbsp;H&nbsp;E &nbsp; S&nbsp;C&nbsp;R&nbsp;E&nbsp;A&nbsp;M</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Artist</b></td><td>Edvard Munch</td></tr><tr><td><b>Year</b></td><td>1893</td></tr><tr><td><b>Type</b></td><td>Oil, tempera, pastel and crayon on cardboard</td></tr><tr><td><b>Dimensions</b></td><td>91 cm × 73.5 cm<br>(36 in × 28.9 in)</td></tr><tr><td><b>Genres</b></td><td>Expressionism</td></tr><tr><td><b>Location</b></td><td>National Gallery,<br>Oslo, Norway</td></tr></table></div></center></body>");
+			});
+			
+			$("#starry-night").click(function() {		
+				$(".img-div").show();
+				$(".info-div").show();
+				$(".img-div").html("<img src= https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg width=100%>");
+				$(".info-div").html("<body><div class=page-header><br><h1>S&nbsp;T&nbsp;A&nbsp;R&nbsp;R&nbsp;Y &nbsp; N&nbsp;I&nbsp;G&nbsp;H&nbsp;T</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Artist</b></td><td>Vincent van Gogh</td></tr><tr><td><b>Year</b></td><td>1889</td></tr><tr><td><b>Type</b></td><td>Oil on canvas</td></tr><tr><td><b>Dimensions</b></td><td>73.7 cm × 92.1 cm<br>(29 in × ​36 1⁄4 in)</td></tr><tr><td><b>Genres</b></td><td>Modernism, Post-Impressionism</td></tr><tr><td><b>Location</b></td><td>Museum of Modern Art,<br>New York City</td></tr></table></div></center></body>");
+			});
+		});
+	</script>	
+</body>
+
+</html>
