@@ -41,57 +41,10 @@
 	<div class="img-div"></div>
 	<div class="info-div"></div>
 	
-	<!--jQuery libraries and what not-->
+	<!--jQuery libraries and external js file-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
-	<!--jQuery-->
-	<script>
-		$(document).ready(function() {
-			$(".img-div").hide();
-			$(".info-div").hide();
-			
-			$("#reset-div").click(function() {		
-				$(".img-div").hide();
-				$(".info-div").hide();
-			});
-		
-			$("#picasso").click(function() {		
-				$(".img-div").show();
-				$(".info-div").show();
-				$(".img-div").html("<img src=https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzU0MDk2MTQx/pablo-picasso-9440021-1-402.jpg height=100%>");
-				$(".info-div").html("<body><div class=page-header><br><h1>P&nbsp;A&nbsp;B&nbsp;L&nbsp;O &nbsp; P&nbsp;I&nbsp;C&nbsp;A&nbsp;S&nbsp;S&nbsp;O</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Birth</b></td><td>October 25, 1881</td></tr><tr><td><b>Death</b></td><td>April 8, 1973</td></tr><tr><td><b>Natural habitat</b></td><td>Málaga, Spain</td></tr><tr><td><b>Genres</b></td><td>Cubism, Surrealism</td></tr><tr><td><b>Famous works</b></td><td><span class=info-list><ul><li>Les Demoiselles d'Avignon (1907)</li><li>Girl before a Mirror (1932)</li><li>Le Rêve (1932)</li><li>Guernica (1937)</li><li>The Weeping Woman (1937)</li></ul></span></td></tr></table></div></center></body>");
-			});
-			
-			$("#van-gogh").click(function() {		
-				$(".img-div").show();
-				$(".info-div").show();
-				$(".img-div").html("<img src=http://www.vincentvangogh.org/images/van-gogh.jpg height=100%>");
-				$(".info-div").html("<body><div class=page-header><br><h1>V&nbsp;I&nbsp;N&nbsp;C&nbsp;E&nbsp;N&nbsp;T&nbsp; &nbsp;V&nbsp;A&nbsp;N &nbsp; G&nbsp;O&nbsp;G&nbsp;H</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Birth</b></td><td>March 30, 1853</td></tr><tr><td><b>Death</b></td><td>July 29, 1890</td></tr><tr><td><b>Natural habitat</b></td><td>Zundert, Netherlands</td></tr><tr><td><b>Genres</b></td><td>Post-Impressionism</td></tr><tr><td><b>Famous works</b></td><td><span class=info-list><ul><li>Sorrow (1882)</li><li>The Potato Eaters (1885)</li><li>Bedroom in Arles (1888)</li><li>The Starry Night (1889)</li><li>Wheatfield with Crows (1890)</li></ul></span></td></tr></table></div></center></body>");
-			});
-			
-			$("#dali").click(function() {		
-				$(".img-div").show();
-				$(".info-div").show();
-				$(".img-div").html("<img src=http://media.guestofaguest.com/t_article_content/wp-content/uploads/2013/11/salvador-dali_himself.jpg width=100%>");
-				$(".info-div").html("<body><div class=page-header><br><h1>S&nbsp;A&nbsp;L&nbsp;V&nbsp;A&nbsp;D&nbsp;O&nbsp;R &nbsp; D&nbsp;A&nbsp;L&nbsp;Í</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Birth</b></td><td>May 11, 1904</td></tr><tr><td><b>Death</b></td><td>January 23, 1989</td></tr><tr><td><b>Natural habitat</b></td><td>Figueres, Catalonia, Spain</td></tr><tr><td><b>Genres</b></td><td>Cubism, Dada, Surrealism</td></tr><tr><td><b>Famous works</b></td><td><span class=info-list><ul><li>The Persistence of Memory (1931)</li><li>Swans Reflecting Elephants (1937)</li><li>Dream Caused by the Flight of a Bee Around a Pomegranate a Second Before Awakening (1944)</li><li>The Elephants (1948)</li><li>Crucifixion (Corpus Hypercubus) (1954)</li></ul></span></td></tr></table></div></center></body>");
-			});
-			
-			$("#da-vinci").click(function() {		
-				$(".img-div").show();
-				$(".info-div").show();
-				$(".img-div").html("<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/LEONARDO.JPG/491px-LEONARDO.JPG height=100%>");
-				$(".info-div").html("<body><div class=page-header><br><h1>L&nbsp;E&nbsp;O&nbsp;N&nbsp;A&nbsp;R&nbsp;D&nbsp;O &nbsp; D&nbsp;A &nbsp; V&nbsp;I&nbsp;N&nbsp;C&nbsp;I</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Birth</b></td><td>April 15, 1452</td></tr><tr><td><b>Death</b></td><td>May 2, 1519</td></tr><tr><td><b>Natural habitat</b></td><td>Vinci, Republic of Florence</td></tr><tr><td><b>Genres</b></td><td>High Renaissance</td></tr><tr><td><b>Famous works</b></td><td><span class=info-list><ul><li>Annunciation (1472)</li><li>Salvador Mundi (1490)</li><li>The Last Supper (1498)</li><li>Mona Lisa (1503)</li><li>St. John the Baptist (1513)</li></ul></span></td></tr></table></div></center></body>");
-			});
-			
-			$("#munch").click(function() {		
-				$(".img-div").show();
-				$(".info-div").show();
-				$(".img-div").html("<img src=http://www.royalcourt.no/aim/kongehuset2/files/7/4/7/1cba1f3f53b5eda88ab7c68b3c03450929b33a0f15/7471cba1f3f53b5eda88ab7c68b3c03450929b33a0f15.jpg height=100%>");
-				$(".info-div").html("<body><div class=page-header><br><h1>E&nbsp;D&nbsp;V&nbsp;A&nbsp;R&nbsp;D &nbsp; M&nbsp;U&nbsp;N&nbsp;C&nbsp;H</h1><br></div><br><center><div class=info-table><table><tr><th style=width:125px></th><th style=width:225px></th></tr><tr><td><b>Birth</b></td><td>December 12, 1863</td></tr><tr><td><b>Death</b></td><td>January 23, 1944</td></tr><tr><td><b>Natural habitat</b></td><td>Ådalsbruk, Løten, United Kingdoms of Sweden and Norway</td></tr><tr><td><b>Genres</b></td><td>Expressionism, Symbolism</td></tr><tr><td><b>Famous works</b></td><td><span class=info-list><ul><li>The Sick Child (1886)</li><li>Melancholy (1891)</li><li>The Scream (1893)</li><li>Anxiety (1894)</li><li>Jealousy (1895)</li></ul></span></td></tr></table></div></center></body>");
-			});
-		});	
-	</script>	
+	<script src="scripts/info_scripts.js"></script>
 </body>	
 
 </html>
